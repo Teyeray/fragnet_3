@@ -5,7 +5,7 @@ setup(
     name="fragnet",
 
     # Version number (initial):
-    version="0.1.0",
+    version="0.1.9",
 
     # Application author details:
     author="Gihan Panapitiya",
@@ -29,4 +29,3 @@ setup(
     # Dependent packages (distributions)
     # install_requires=["openbabel"],
 )
-

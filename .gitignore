@@ -1,0 +1,27 @@
+fragnet/pretrain_data/
+fragnet/finetune_data/
+
+# Python 编译产物
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter 临时文件
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# TensorBoard 日志
+**/runs/
+**/events.out.tfevents.*
+
+# 模型权重 & 数据文件
+*.pt
+*.pkl
+
+# 实验结果目录
+
+# 系统文件
+.DS_Store

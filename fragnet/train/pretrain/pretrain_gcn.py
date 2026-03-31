@@ -1,4 +1,4 @@
-from gcn import FragNetPreTrain
+from fragnet.model.gcn.gcn import FragNet
 from dataset import load_data_parts
 from data import mask_atom_features
 import torch.nn as nn

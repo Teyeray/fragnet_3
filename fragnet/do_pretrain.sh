@@ -1,0 +1,1 @@
+python train/pretrain/pretrain_gcn_arg.py --config exps/pt/pvkp_0331/config.yaml

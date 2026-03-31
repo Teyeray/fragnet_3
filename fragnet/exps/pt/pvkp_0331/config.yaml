@@ -1,0 +1,20 @@
+seed: 123
+exp_dir: exps/pt/pvkp_0331
+
+# 脚本直接用的参数
+data_dir: pretrain_data/0331/
+output_dir: exps/pt/pvkp_0331/splits
+batch_size: 4
+val_batch_size: 32
+lr: 1e-4
+patience: 100
+chkpoint_name: exps/pt/pvkp_0331/pt.pt
+epochs: 1000
+
+atom_features: 167
+frag_features: 167
+edge_features: 17
+model_version: gcn
+device: cuda
+fedge_in: 6
+fbond_edge_in: 6
