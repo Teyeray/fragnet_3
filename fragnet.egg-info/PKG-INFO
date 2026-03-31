@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: fragnet
+Version: 0.1.0
+Summary: FragNet: A GNN with Four Layers of Interpretability
+Home-page: 
+Author: Gihan Panapitiya
+Author-email: gihan.panapitiya@pnnl.gov
+License-File: LICENSE.md
+Dynamic: author
+Dynamic: author-email
+Dynamic: license-file
+Dynamic: summary
