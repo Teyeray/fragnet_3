@@ -8,23 +8,20 @@ import logging.config
 
 
 def continuous_creation(args):
-
     l_limit = args.low
     h_limit = args.high
     n_rows = args.n_rows
 
     for i in range(l_limit, h_limit, n_rows):
         start_id = i
-        end_id = i + n_rows - 1
-        dfi = df.loc[start_id:end_id]
+        end_id = min(i + n_rows - 1, h_limit - 1)
+        dfi = df.iloc[start_id:end_id + 1]  # ✅ iloc 按位置切，不受索引影响
 
         ds = get_pt_dataset(dfi, args.data_type, maxiters=args.maxiters)
         ds = extract_data(ds)
         save_path = f"{args.save_path}/pt_{start_id}_{end_id}"
         save_datasets(ds, save_path)
-
         print(dfi.shape)
-
 
 def create_from_ids(args):
 

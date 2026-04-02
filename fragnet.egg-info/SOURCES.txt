@@ -56,6 +56,7 @@ fragnet/model/gat/gat2_lite.py
 fragnet/model/gat/gat2_pl.py
 fragnet/model/gat/gat2_pretrain.py
 fragnet/model/gat/pretrain_heads.py
+fragnet/model/gcn/__init__.py
 fragnet/model/gcn/gcn.py
 fragnet/model/gcn/gcn2.py
 fragnet/model/gcn/gcn3.py
@@ -68,6 +69,7 @@ fragnet/train/finetune/finetune_dta.py
 fragnet/train/finetune/finetune_gat.py
 fragnet/train/finetune/finetune_gat2.py
 fragnet/train/finetune/finetune_gat2_pl.py
+fragnet/train/finetune/finetune_gcn.py
 fragnet/train/finetune/finetune_norm.py
 fragnet/train/finetune/gat2_cv_frag.py
 fragnet/train/finetune/trainer_cdrp.py
@@ -78,6 +80,7 @@ fragnet/train/pretrain/pretrain_gat2.py
 fragnet/train/pretrain/pretrain_gat_mol.py
 fragnet/train/pretrain/pretrain_gat_str.py
 fragnet/train/pretrain/pretrain_gcn.py
+fragnet/train/pretrain/pretrain_gcn_arg.py
 fragnet/train/pretrain/pretrain_heads.py
 fragnet/train/pretrain/pretrain_utils.py
 fragnet/vizualize/app.py

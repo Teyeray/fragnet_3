@@ -1,0 +1,35 @@
+seed: 42
+exp_dir: exps/ft/test_0331
+atom_features: 167
+frag_features: 167
+edge_features: 17
+cond_dim: 1            # ← 新增：新特征的维度（有几列就填几）
+cond_cols:             # ← 新增：CSV 中新特征的列名
+  - my_new_feature     #   如果有多列就继续往下加
+
+pretrain:
+  chkpoint_name: exps/pt/pvkp_0331/pt.pt
+  emb_dim: 128
+  num_layer: 6
+  drop_ratio: 0.15
+
+finetune:
+  train:  { path: finetune_data/moleculenet_exp1s/esol/train.pkl }
+  val:    { path: finetune_data/moleculenet_exp1s/esol/val.pkl }
+  test:   { path: finetune_data/moleculenet_exp1s/esol/test.pkl }
+  batch_size: 128
+  lr: 0.00001
+  n_epochs: 500
+  es_patience: 20
+  chkpoint_name: exps/ft/test_0331/finetune_gcn.pt
+  loss: mse
+  target_type: regr
+  scale_y: false
+  use_schedular: false
+  model:
+    n_classes: 1
+    num_layer: 6
+    drop_ratio: 0.3
+    emb_dim: 128
+    act: relu
+    fthead: linear

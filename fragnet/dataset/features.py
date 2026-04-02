@@ -3,7 +3,7 @@ from rdkit import Chem
 from .feature_utils import one_of_k_encoding, one_of_k_encoding_unk
 from .feature_utils import get_bond_pair
 
-
+atom_list_one_hot = list(range(1, 119))
 class FeaturesEXP:
     
     """

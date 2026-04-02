@@ -1,1 +1,1 @@
-python train/finetune/finetune_gcn.py --config exps/ft/ft_0331/ft_0331.yaml 
+python train/finetune/finetune_gcn.py --config exps/ft/ft_0401/ft_0401.yaml 
